@@ -10,5 +10,7 @@ services:
     ports:
       - "6712:6712"
     env_file: .env
+    environment:
+      - API_SERVICE_URL=http://api_service:2198
     depends_on:
       - api_service
