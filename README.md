@@ -298,3 +298,4 @@ Agent calls `get_user_details("test@yok.com")` → API returns 404 → Agent tel
 - **Agent does not follow a fixed flow**: The LLM decides which tool to call. Even if the data changes, the agent takes the new data as a parameter and explains it to the user correctly.
 - **`tool_calls_log`**: Every response includes which tools were called, in what order, and their results.
 - **Additional notes**:  we can use agno, openhands or langgraph etc. We can pass full agentic freamwork and we will not need to write any code.
+- **Additional notes**:  we can use grpc in the inhose api connection, this gives us faster communication
