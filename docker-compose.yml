@@ -1,0 +1,14 @@
+services:
+  api_service:
+    build: ./api_service
+    ports:
+      - "2198:2198"
+    env_file: .env
+
+  llm_service:
+    build: ./llm_service
+    ports:
+      - "6712:6712"
+    env_file: .env
+    depends_on:
+      - api_service
